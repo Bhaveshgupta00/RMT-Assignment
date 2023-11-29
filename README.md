@@ -1,5 +1,6 @@
 # RMT-Assignment
-```
+# FIBONACCI METHOD 
+```c
 #include<stdio.h>
 float Fx(float x)
 {
@@ -56,8 +57,22 @@ int main()
     return 0;  
 }
 ```
-//GOLDEN SEARCH METHOD
+
+## OUTPUT
+```js
+Enter value of N 5
+Enter Lower limits 1 2
+Enter Upper limits K     F*      L       R       X1      X2      Fx1     Fx2    L/R 
+1       0.63    1.00    2.00    1.38    1.63    -0.86   -0.61    L
+2       0.60    1.00    1.63    1.25    1.38    -0.94   -0.86    L
+3       0.67    1.00    1.38    1.13    1.25    -0.98   -0.94    L
+4       0.50    1.00    1.25    1.13    1.13    -0.98   -0.98    L
+5       1.00    1.00    1.13
+xmin = 1.063
+fxmin = -0.996
 ```
+# GOLDEN SEARCH METHOD
+```c
 #include<stdio.h>
 float Fx(float x)
 {
@@ -114,4 +129,17 @@ int main()
       printf("xmin = %.3f \nfxmin = %.3f\n",xmin,Fxmin);
    return 0;
 }
+```
+## OUTPUT
+```js
+Enter tolerance 0.15
+Enter Lower limits 1 2 
+Enter Upper limits K     L       R       X1      X2      Fx1     Fx2     L/R 
+1       1.00    2.00    1.38    1.62    -0.16   0.19     L
+2       1.00    1.62    1.24    1.38    -0.33   -0.16    L
+3       1.00    1.38    1.15    1.24    -0.41   -0.33    L
+4       1.00    1.24    1.09    1.15    -0.45   -0.41    L
+5       1.00    1.15
+xmin = 1.073
+fxmin = -0.458
 ```
